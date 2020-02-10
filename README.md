@@ -72,8 +72,11 @@ IBM offers a basic [Internet of Things platform](https://cloud.ibm.com/catalog/s
 
 Node-RED MQTT nodes are usually part of a standard installation, so connecting to IOT platforms (IBM and others) can be straightforward. Using the subscribe mechanism, events can be presented to applications which can then createenhanced timeseries data, using a combination of realtime lookups, reference tables, and predictive models.
 
+While there are some namespace restrictions, and access controls that the Watson IOT Platform enforces, it is still under the covers an MQTT broker - that means any MQTT client device/system can connect and exchange messages, as long as the authentication and authorisation requirements are followed.
+
 <details><summary>Examples/tutorials</summary>
   
++ [MQTT from CC3200](https://developer.ibm.com/answers/questions/492812/how-to-subscribe-ibm-watson-iot-platform-with-cc32/)
 + [Talk to your digital twin](https://developer.ibm.com/recipes/tutorials/talk-to-your-sensor-using-the-watson-iot-platform-and-conversation-services/)
 + [Publishing to IOT clouds](https://labs.eleks.com/2019/01/node-red-library-iot-cloud.html)
 + [Connect to IBM IOT with MQTT](https://www.opc-router.com/connecting-ibm-watson-iot-platform-via-mqtt/)
@@ -92,9 +95,17 @@ The recommended alternative is to create your own [IOT service instance](https:/
 
 A growing area of interest in the IOT world is knowing weather observations in the local area where IOT events are generated, and being able to use historical/almanac information to help predict similar conditions, as well as exploiting a variety of forecasting options.
 
-IBM, through the [Weather Company](https://www.ibm.com/uk-en/marketplace/weather-company-data-packages/purchase) offers a rich set of weather-related services, including "lifestyle" related data (pollen, skiiing, cycling, etc); until Autumn 2019, there was a free developer-oriented service available through the IBM Cloud platform - it has been withdrawn.
+IBM, through the [Weather Company](https://www.ibm.com/uk-en/marketplace/weather-company-data-packages/purchase) offers a rich set of weather-related services, including "lifestyle" related data (pollen, skiiing, cycling, etc); until Autumn 2019, there was a free developer-oriented service available through the IBM Cloud platform - it has been withdrawn. You can have free developer access to the Weather Company API as a particpant of the annual [Call for Code challenge](https://callforcode.org/) - check the website for validity period. Annual challenges are announced February/March each year.
 
 A great alternative free source of weather data - observations, forecasts and hostorical averages - is available through [Dark Sky](https://darksky.net/) (previously known as **forecast.io**).
+
+<details><summary>Examples/tutorials</summary>
+
++ [Call for Code - Weather API](https://github.com/Call-for-Code/weather-api-nodejs)
++ [Dark Sky weather dashboard](https://www.instructables.com/id/Build-a-Weather-Dashboard-Using-Dark-Sky-API/)
++ [Get started with OpenWeatherMap](https://openweathermap.org/appid)
+
+</details>
 
 # Analytics
 
@@ -104,7 +115,7 @@ The most popular tools used in data analysis - Jupyter Notebooks, R Studio, and 
 
 <details><summary>Examples/tutorials</summary>
   
-+ [Watson Studio - SPSS Modeler](https://developer.ibm.com/technologies/data-science/tutorials/watson-studio-spss-modeler-flow/
++ [Watson Studio - SPSS Modeler](https://developer.ibm.com/technologies/data-science/tutorials/watson-studio-spss-modeler-flow/)
 + [Data visualisation with python](https://developer.ibm.com/technologies/analytics/patterns/visualize-data-with-python)
 + [Watson Studio - Air quality notebook](https://github.com/IBM/smart-city-analytics) and [working notebook](https://github.com/IBMDeveloperUK/air-quality-analysis)
 
@@ -117,7 +128,8 @@ The most popular tools used in data analysis - Jupyter Notebooks, R Studio, and 
 [overview](https://www.ibm.com/topics/machine-learning)
 
 <details><summary>Examples/tutorials</summary>
-+ [Machine Learning environment](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html?audience=wdp_
+  
++ [Machine Learning environment](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html?audience=wdp)
 + [Cognitive IOT application in 7 steps](https://developer.ibm.com/technologies/data-science/tutorials/iot-cognitive-iot-app-machine-learning)
 + [AutoAI - AI for AI tutorial](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai_example_binary_classifier.html?audience=wdp)
   
