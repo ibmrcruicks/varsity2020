@@ -1,34 +1,60 @@
 # Varsity 2020
 workshop options:
 
-+ [Dashboards](#dashboards)
++ [Cloud catalog](#catalog)
++ [Developing applications](#developing-applications)
++ [Node-RED low code enironment](#node-red)
 + [Data stores](#datastores)
 + [IOT](#iot)
++ [Dashboards](#dashboards)
 + [Weather](#weather)
 + [Analytics](#analytics)
 + [Machine Learning](#machine-learning)
 
 
-# Dashboards
+# Catalog
 
-Use your Node-RED skills to build interactive dashboards for
-+ data visualisation
-+ control systems interfaces
-+ documentation
+The core of any cloud environment is its catalog - the go-to list of service and capabilities that you as a developer can exploit to build and run applications. You will find very simialr approaches by all the major cloud platform vendors, with varying degrees of attractiveness and usability.
 
-Install the [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard) into your Node-RED palette (best done through the package.json, but can also be added via `Manage Palette`.
+The [IBM Cloud catalog](https://cloud.ibm.com/catalog) provides a comprehensive list of services you can use, and includes the
+charging models available -- i.e. how much would you pay to use a particular service.
 
-![dashnoard](https://nodered.org/images/dashboarde.png)
+To get you started building applications, IBM provide a wide range of the services through a `Lite` plan - essentially this allow free use of these services within their particular limits/constraints) to allow you to build prototype applications. Some of these service can be used indefinitely, without ever incurring charges; others may have a time-limit on how long the free use lasts.
 
-This node provides quick and easy access to buttons, charts, forms, and other interactive web gadgetry.
+An alternative view of the catalog [MyCatalog](https://mycatalog.mybluemix.net) provides a quick and consistent view of available services, their descriptions, and available billing models.
 
-<details><summary>Examples/tutorials</summary>
+# Developing applications
+
+All the best cloud platforms provide a variety ofroutes to developing, and running applications; most offer some mechanism that support virtual machines and, more recently, containers. Most offer `application runtimes` - these allow developers to concentrate on their application code, and links to services, and largely ignore the underlying technologies and dependencies needed to run that code.
+
+In the IBM Cloud, you will find:
++ **cloud foundry**
   
-+ [basic IOT dashboard](https://developer.ibm.com/recipes/tutorials/ui-dashboard-for-iot-device-data-using-node-red/)
-+ [Freewave dashboard tutorial](https://www.youtube.com/watch?v=X8ustpkAJ-U)
-+ [Earthquake monitor](https://developer.ibm.com/tutorials/simple-earthquake-monitoring-system-using-nodered/)
+  an application runtime environment that allows you to build applications in (any combination of):
+  <table>
+  <tr>
+    <td>Ruby</td>
+    <td>Java</td>
+    <td>Javascript</td>
+  </tr>
+  <tr>
+    <td>Go</td>
+    <td>Python</td>
+    <td>PHP</td>
+  </tr> 
+  <tr>
+    <td>Swift</td>
+    <td>.Net</td>
+    <td>tomcat</td>
+  </tr>
+  </table>
+  There are also community-maintained "buildpacks", which can be used to extend the runtimes supported [public buildpacks](https://github.com/cloudfoundry?utf8=✓&q=buildpack)
+  
++ **virtual machines**
+  
+  \preconfigured software environments to which you add your application code, management tools, and links to other services and functions
 
-</details>
+# Node-RED
 
 # Datastores
 
@@ -90,6 +116,27 @@ When IBM launched the Internet of Things platform, it provided a free unauthenti
 This service is due to be discontinued during [February 2020](https://developer.ibm.com/iotplatform/2020/01/17/advanced-notice-withdrawal-of-watson-iot-platform-quick-start/). 
 
 The recommended alternative is to create your own [IOT service instance](https://cloud.ibm.com/catalog/services/iotf-service), and then use the [Device Simulation](https://cloud.ibm.com/docs/services/IoT?topic=iot-platform-sim_device_data) capability. This is provides much richer functions for generating data for single or multiple devices and device-types, but provides no mechanism for maunual override. 
+
+# Dashboards
+
+Use your Node-RED skills to build interactive dashboards for
++ data visualisation
++ control systems interfaces
++ documentation
+
+Install the [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard) into your Node-RED palette (best done through the package.json, but can also be added via `Manage Palette`.
+
+![dashnoard](https://nodered.org/images/dashboarde.png)
+
+This node provides quick and easy access to buttons, charts, forms, and other interactive web gadgetry.
+
+<details><summary>Examples/tutorials</summary>
+  
++ [basic IOT dashboard](https://developer.ibm.com/recipes/tutorials/ui-dashboard-for-iot-device-data-using-node-red/)
++ [Freewave dashboard tutorial](https://www.youtube.com/watch?v=X8ustpkAJ-U)
++ [Earthquake monitor](https://developer.ibm.com/tutorials/simple-earthquake-monitoring-system-using-nodered/)
+
+</details>
 
 # Weather
 
