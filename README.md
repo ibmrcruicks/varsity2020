@@ -132,7 +132,8 @@ This node provides quick and easy access to buttons, charts, forms, and other in
 
 <details><summary>Examples/tutorials</summary>
   
-+ [basic IOT dashboard](https://developer.ibm.com/recipes/tutorials/ui-dashboard-for-iot-device-data-using-node-red/)
++ [basic IOT dashboard with Steve](http://stevesnoderedguide.com/node-red-dashboard)
++ [monitor for hay fires](https://developer.ibm.com/technologies/iot/tutorials/iot-edge3)
 + [Freewave dashboard tutorial](https://www.youtube.com/watch?v=X8ustpkAJ-U)
 + [Earthquake monitor](https://developer.ibm.com/tutorials/simple-earthquake-monitoring-system-using-nodered/)
 
@@ -164,7 +165,8 @@ The most popular tools used in data analysis - Jupyter Notebooks, R Studio, and 
   
 + [Watson Studio - SPSS Modeler](https://developer.ibm.com/technologies/data-science/tutorials/watson-studio-spss-modeler-flow/)
 + [Data visualisation with python](https://developer.ibm.com/technologies/analytics/patterns/visualize-data-with-python)
-+ [Watson Studio - Air quality notebook](https://github.com/IBM/smart-city-analytics) and [working notebook](https://github.com/IBMDeveloperUK/air-quality-analysis)
++ [Watson Studio - Air quality notebook](https://github.com/IBM/smart-city-analytics) 
++ [Access project storage in notebook](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/project-lib-python.html)
 
 </details>
 
